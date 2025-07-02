@@ -22,25 +22,26 @@ const Hero = () => {
       </div>
 
       {/* Right - Intro Text and Scroll Arrow */}
-      <div className="w-1/2 h-full flex flex-col justify-center text-center relative z-10">
+      <div className="w-1/2 h-full  flex flex-col justify-center text-center relative z-10">
         <div className="relative left-12 space-y-4">
           {/* Faraz Ahmad in same size */}
-          <div className="flex justify-center items-center space-x-2 text-6xl">
+          <div className="flex justify-center items-baseline space-x-2 text-6xl">
             <p className="text-white">Faraz</p>
-            <AuroraText>Ahmad</AuroraText>
+            <AuroraText className="text-8xl">Ahmad</AuroraText>
           </div>
 
           {/* Subtext */}
-          <div className="text-port-700 text-sm md:text-lg lg:text-2xl ">
+          <div className="text-port-700  text-sm md:text-lg lg:text-2xl ">
             <p>a visual designer / motion graphic designer</p>
             <p>based in Delhi.</p>
           </div>
+          {/* Scroll Down Arrow */}
+          <ChevronDown className="w-6 h-6 relative -bottom-50 left-85 text-white opacity-70 animate-bounce" />
+        
         </div>
+        
 
-        {/* Scroll Down Arrow */}
-        <div className="absolute bottom-10 right-1/2 translate-x-1/2">
-          <ChevronDown className="w-6 h-6 text-white opacity-70 animate-bounce" />
-        </div>
+        
       </div>
     </div>
   );
