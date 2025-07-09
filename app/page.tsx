@@ -1,11 +1,12 @@
 import Hero from '@/exp-components/Hero'
-import Navbar from '@/exp-components/Navbar'
+import AboutPage from './about/page'
 import React from 'react'
+
 const page = () => {
   return (
     <div className='bg-black'>
-      <Navbar />
       <Hero />
+      <AboutPage />
     </div>
   )
 }
